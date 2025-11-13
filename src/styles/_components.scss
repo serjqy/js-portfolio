@@ -1,0 +1,111 @@
+// Buttons, cards, forms, etc...
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+
+  // Tablet
+  @media (max-width: 1024px) {
+    max-width: 960px;
+  }
+
+  // Big phone
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+
+  // Small phone
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--color-primary);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-menu {
+  @extend .btn;
+  @extend .glass;
+
+  display: none;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+
+  @media (max-width: 768px) {
+    display: inline-flex;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-bg-dash);
+  font-size: 1rem;
+
+  & > i {
+    color: var(--color-bg-dash);
+  }
+}
+
+/* Base Glass Style */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Layout glass blocks */
+.glass-bg {
+  @extend .glass;
+  padding: 1.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   height: 1px;
+  //   background: linear-gradient(
+  //     90deg,
+  //     transparent,
+  //     rgba(255, 255, 255, 0.8),
+  //     transparent
+  //   );
+  // }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.glass-bg-text {
+  @extend .glass;
+  padding: 0.625rem 1.25rem;
+  color: var(--color-tertiary);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
