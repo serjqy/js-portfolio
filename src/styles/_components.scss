@@ -54,9 +54,14 @@
   background-color: var(--color-primary);
   color: var(--color-bg-dash);
   font-size: 1rem;
+  transition: gap 0.3s ease;
 
   & > i {
     color: var(--color-bg-dash);
+  }
+
+  &:hover {
+    gap: 0.75rem;
   }
 }
 
@@ -108,4 +113,10 @@
   &:hover {
     color: var(--color-primary);
   }
+}
+
+.text-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 140%;
+  font-weight: 600;
 }
