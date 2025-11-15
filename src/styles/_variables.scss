@@ -3,18 +3,27 @@
 :root {
   --color-bg: #201f1f;
   --color-bg-dash: #2d2d2d;
-  --color-text: #6cace4;
   --color-primary: #ffffff;
   --color-secondary: #f0f0f0;
   --color-tertiary: #c4c4c4;
+  // Glass
+  --color-bg-glass: rgba(255, 255, 255, 0.05);
+  --border-glass: 1px solid rgba(255, 255, 255, 0.3);
+  --box-shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .light-theme {
-  --color-bg: #ffffff;
+  --color-bg: #fafafa;
   --color-bg-dash: #f0f0f0;
-  --color-text: #004e93;
   --color-primary: #1a1a1a;
   --color-secondary: var(--color-primary);
   --color-tertiary: var(--color-primary);
+  // Glass
+  --color-bg-glass: rgba(255, 255, 255, 0);
+  --border-glass: 1px solid rgba(0, 0, 0, 0.1);
+  --box-shadow-glass: 0 4px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2);
 }
-

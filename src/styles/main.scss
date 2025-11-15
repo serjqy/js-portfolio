@@ -1,6 +1,7 @@
 @use "./variables";
 @use "./base";
 @use "./components";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .header {
   &__wrapper {
@@ -78,6 +79,7 @@
 
 .main {
   .hero {
+    position: relative;
     &__wrapper {
       text-align: center;
       height: calc(75vh - 100px);
@@ -210,12 +212,6 @@
     font-size: 1.25rem;
     margin-bottom: 10px;
   }
-  &__label {
-    font-size: 1rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    color: var(--color-tertiary);
-  }
 
   @media (max-width: 480px) {
     &__contact {
@@ -225,6 +221,40 @@
       flex-direction: column-reverse;
       text-align: center;
       gap: 2rem;
+    }
+  }
+}
+
+// CONTACT PAGE
+
+.contact {
+  .form {
+    display: flex;
+    flex-direction: column;
+    &__row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &__input {
+      font-size: 1.25rem;
+
+      &-error {
+        color: rgb(255, 47, 47);
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+    }
+    &__textarea {
+      height: 350px;
+      resize: none;
+      font-size: 1.25rem;
+    }
+    .btn-submit {
+      width: 35%;
+      margin: 0 auto;
+      font-size: 1.125rem;
     }
   }
 }
