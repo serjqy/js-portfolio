@@ -134,3 +134,9 @@
   text-transform: uppercase;
   color: var(--color-tertiary);
 }
+
+.footer-heading {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 140%;
+  font-weight: 600;
+}

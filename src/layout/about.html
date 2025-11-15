@@ -10,69 +10,154 @@
     ></script>
   </head>
   <body>
-    <div id="app">
-      <header class="header">
-        <div class="header__wrapper container">
-          <h2 class="header__logo">© Code By Serjay.</h2>
-          <nav class="nav glass-bg">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="/index.html" class="nav__link glass-bg-text">Home</a>
+    <header class="header">
+      <div class="header__wrapper container">
+        <h2 class="header__logo">© Code By Serjay.</h2>
+        <nav class="nav glass-bg">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link glass-bg-text"
+                >About Me</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./works.html" class="nav__link">My Works</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <h1 class="hero__title text-heading">About Me.</h1>
+          <p class="text-label">Little brief about myseflf</p>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper container">
+          <div class="about__content">
+            <div class="about__header">
+              <h2 class="about__title">
+                I find joy in creating work that is both aesthetic & accessible.
+              </h2>
+              <p class="about__description">
+                I build front-end experiences that convert—clean, fast, and
+                visually distinct. I focus on clarity, accessibility, and strong
+                design fundamentals to create interfaces that people enjoy
+                using. Through thoughtful iteration and attention to detail, I
+                turn ideas into polished, high-performing digital products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stack">
+        <div class="stack__wrapper">
+          <div class="stack__list glass-bg">
+            <!-- Items -->
+          </div>
+        </div>
+      </section>
+      <section class="education">
+        <div class="education__wrapper container">
+          <div class="education__content glass-bg">
+            <div class="education__card">
+              <h3 class="education__title">SAE Institute</h3>
+              <p class="education__description text-label">
+                BA (Hons) Web Development
+              </p>
+              <p class="education__date">Sep 2025 - Present</p>
+            </div>
+            <div class="education__card">
+              <h3 class="education__title">CodeAcademy Bootcamp</h3>
+              <p class="education__description text-label">
+                Full-Stack Engineer
+              </p>
+              <p class="education__date">Oct 2025 - Present</p>
+            </div>
+            <div class="education__card">
+              <h3 class="education__title">North Kent College</h3>
+              <p class="education__description text-label">
+                BTEC L3 National Extended Diploma In Information Technology
+              </p>
+              <p class="education__date">Sep 2023 - June 2024</p>
+            </div>
+          </div>
+          <img src="/personal.jpg" alt="Author" class="education__image" />
+        </div>
+      </section>
+      <section class="socials">
+        <div class="socials__wrapper container">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a
+                href="https://github.com/serjqy"
+                target="_blank"
+                class="socials__link"
+                >Github</a
+              >
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank" class="socials__link">Linkedin</a>
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank" class="socials__link">Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank" class="socials__link">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__contact">
+          <a
+            href="./contact.html"
+            class="footer__contact-link footer-heading glass-bg-text"
+            ><i class="fa-regular fa-envelope"></i>Let's work together.</a
+          >
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p class="footer__edition">2025 © Edition</p>
+            <p class="footer__label text-label">Version</p>
+          </div>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  href="https://github.com/serjqy"
+                  class="footer__social-link"
+                  target="_blank"
+                >
+                  Github
+                </a>
               </li>
-              <li class="nav__item">
-                <a href="./about.html" class="nav__link">About Me</a>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link"> Linkedin </a>
               </li>
-              <li class="nav__item">
-                <a href="./works.html" class="nav__link">My Works</a>
-              </li>
-              <li class="nav__item">
-                <a href="./contact.html" class="nav__link">Contact</a>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link"> Instagram </a>
               </li>
             </ul>
-          </nav>
-          <button class="btn btn-menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </header>
-      <footer class="footer">
-        <div class="footer__wrapper container">
-          <div class="footer__contact">
-            <a
-              href="./contact.html"
-              class="footer__contact-link text-heading glass-bg-text"
-              ><i class="fa-regular fa-envelope"></i>Let's work together.</a
-            >
-          </div>
-          <div class="footer__bottom">
-            <div class="footer__copyright">
-              <p class="footer__edition">2025 © Edition</p>
-              <p class="footer__label text-label">Version</p>
-            </div>
-            <div class="footer__social">
-              <ul class="footer__social-list">
-                <li class="footer__social-item">
-                  <a
-                    href="https://github.com/serjqy"
-                    class="footer__social-link"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"> Linkedin </a>
-                </li>
-                <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"> Instagram </a>
-                </li>
-              </ul>
-              <p class="footer__label text-label">Socials</p>
-            </div>
+            <p class="footer__label text-label">Socials</p>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -3,6 +3,8 @@ import { worksData } from "./DATA";
 export function initWorks() {
   const workCards = document.querySelector(".work__cards");
 
+  if (!workCards) return;
+
   worksData.forEach(({ title, description, type, year, image }) => {
     const card = document.createElement("div");
     card.classList.add("work__card", "glass-bg");
