@@ -449,6 +449,10 @@
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
 
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+
     &:hover {
       transform: scale(1.02);
     }
@@ -478,5 +482,8 @@
   }
   &__solutions {
     text-align: end;
+    @media (max-width: 480px) {
+      text-align: start;
+    }
   }
 }

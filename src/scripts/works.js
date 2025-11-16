@@ -37,6 +37,6 @@ export function initWorks() {
 
     const id = btn.dataset.id;
 
-    window.location.href = `/src/layout/works-single.html?id=${id}`;
+    window.location.href = `/works-single.html?id=${id}`;
   });
 }
