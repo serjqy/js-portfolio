@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SJ - Contact Page</title>
+    <title>SJ - Works Page</title>
     <script
       src="https://kit.fontawesome.com/60c94ed1cd.js"
       crossorigin="anonymous"
@@ -23,12 +23,12 @@
               <a href="./about.html" class="nav__link">About Me</a>
             </li>
             <li class="nav__item">
-              <a href="./works.html" class="nav__link">My Works</a>
+              <a href="./works.html" class="nav__link glass-bg-text"
+                >My Works</a
+              >
             </li>
             <li class="nav__item">
-              <a href="./contact.html" class="nav__link glass-bg-text"
-                >Contact</a
-              >
+              <a href="./contact.html" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -38,70 +38,23 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="hero__wrapper container">
-          <h1 class="hero__title text-heading">Get in Touch With Me.</h1>
-          <p class="text-label">For any queries, fill the form below</p>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="contact__wrapper container">
-          <form
-            id="form"
-            class="form glass-bg"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
-            <!-- REQUIRED for Netlify Forms -->
-            <input type="hidden" name="form-name" value="contact" />
-
-            <div class="form__row">
-              <label for="name" class="form__label text-label">Your name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form__input glass-bg-text"
-              />
-              <p class="form__input-error"></p>
-            </div>
-
-            <div class="form__row">
-              <label for="subject" class="form__label text-label"
-                >Subject</label
-              >
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="form__input glass-bg-text"
-              />
-              <p class="form__input-error"></p>
-            </div>
-
-            <div class="form__row">
-              <label for="message" class="form__label text-label"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                name="message"
-                class="form__input form__textarea glass-bg-text"
-              ></textarea>
-              <p class="form__input-error"></p>
-            </div>
-
-            <button class="btn btn-primary btn-submit" type="submit">
-              Submit
-            </button>
-          </form>
+      <section class="work">
+        <div class="work__wrapper container">
+          <div class="work__single">
+            <!-- Card -->
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
+        <div class="footer__contact">
+          <a
+            href="./contact.html"
+            class="footer__contact-link footer-heading glass-bg-text"
+            ><i class="fa-regular fa-envelope"></i>Let's work together.</a
+          >
+        </div>
         <div class="footer__bottom">
           <div class="footer__copyright">
             <p class="footer__edition">2025 © Edition</p>
